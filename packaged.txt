@@ -1,0 +1,3 @@
+pyinstaller Main.py --noconsole --icon="UI/icons/LOGO.ico"
+
+pyinstaller -D Main.py --noconsole --icon="UI/icons/LOGO.ico"
