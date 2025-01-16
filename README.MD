@@ -45,14 +45,14 @@ pip install -r requirements.txt
 
 #### 使用 PyInstaller 打包项目
 
-为了将项目打包成独立的可执行文件，可以使用 `PyInstaller` 工具。根据 `packaged.txt` 文件中的指令，以下是打包步骤：
+为了将项目打包成独立的可执行文件，可以使用 `PyInstaller` 工具。根据 `packaged.txt` 文件中的指令，以下是打包步骤(可根据需求选择打包方式)：
 
-1. **创建可执行文件（无控制台窗口）**
+1. **创建可执行文件（无控制台窗口，通常用于打包最终发布版本）**
 
    ```bash
    pyinstaller Main.py --noconsole --icon="UI/icons/LOGO.ico"
    ```
-2. **创建可执行文件（带所有依赖项，无控制台窗口）**
+2. **创建可执行文件（带所有依赖项，无控制台窗口，通常用于开发过程中debug打包好的可执行文件，需要看终端输出）**
 
    ```bash
    pyinstaller -D Main.py --noconsole --icon="UI/icons/LOGO.ico"
